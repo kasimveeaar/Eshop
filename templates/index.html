@@ -1,0 +1,22 @@
+ {% extends 'base.html' %}
+{% block title%} Pase {% endblock%}
+{% block content %}
+  <div class="container mt-4 pd-4">
+      <div class="row">
+           <div class="col sm-4 mt-2">
+           {% for img in img  %}
+           <div class="card" style="width: 18rem;">
+        <img src="/media/{{img.image}}" alt="kasim saifi" class="card-img-top" height="150px" width="150px">   
+         <div class="col sm-8">
+        <div class="card-body py-2 mt-3">
+      <h5 class="card-title">
+     
+    </h5>
+     {% endfor  %}
+      <a href="#" class="btn btn-primary btn-sm">Chech Here</a> 
+     
+     </div>
+        </div>
+</div> 
+        
+{% endblock %}
